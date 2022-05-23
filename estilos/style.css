@@ -327,3 +327,13 @@ main{
     display: flex;
     align-items: center;
 }
+
+.nav-link:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.iconosFooter:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
