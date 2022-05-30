@@ -1,0 +1,21 @@
+.iconosFooter{
+    width: 20px;
+    padding-bottom: 13px;
+}
+
+.textoFooter{
+    padding-left: 15px;
+}
+
+.footer{
+    background-color: rgb(126,0,1);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 3rem;
+    bottom: 0;
+}
+
+.iconosFooter:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}

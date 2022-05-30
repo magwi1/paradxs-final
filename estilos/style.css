@@ -1,339 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@500&display=swap');
-
-/*
-*{
-    padding: 0;
-    margin: 0;
-    color: rgb(17,17,17);
-    font-family: 'Poppins', sans-serif;
+#logoParadxs {
+  width: 7.5rem;
+  margin-left: 10px;
 }
 
-header{
-    background-color: white
+#shadow-divider {
+  bottom: 1px;
+  z-index: -1;
+  -webkit-box-shadow: 0px 0px 1px 1px #e9e9e9;
+          box-shadow: 0px 0px 1px 1px #e9e9e9;
+  margin-top: 10px;
 }
 
-body{
-    background-color: white,
+.nav-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
-#logoParadxs{
-    width: 8rem;
-    position: absolute;
-    top: 5px;
+.textoInicio {
+  padding-left: 20px;
 }
 
-.banner-texto{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+.iconosFooter {
+  width: 20px;
+  padding-bottom: 13px;
 }
 
-.principal{
-    background-image: url("../images/paradxs-de-manos.jpg");
-    height: 400px;
+.textoFooter {
+  padding-left: 15px;
 }
 
-.principal h1{
-    padding-top: 30px;
-    padding-left: 20px;
-    color: white;
+.footer {
+  background-color: #7e0001;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 3rem;
+  bottom: 0;
 }
 
-.navBar{
-    display: flex;
-    justify-content: flex-end;
+.iconosFooter:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
-nav{
-    padding: 2rem;
+.formulario {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f0efef;
+  margin: 2rem;
 }
 
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 10px;
+.imagen-sumate-militar {
+  border-radius: 5px;
+  margin: 1rem;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: rgb(31,80,14);
+.encabezadoH1 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-h2{
-    color: rgb(126,0,1);
-    font-family: 'Rubik', sans-serif;
-    margin: 1rem;
+.imagenFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-h1{
-    color: rgb(126,0,1);
-    font-family: 'Rubik', sans-serif;
-    margin-left: 20px;
-    padding-top: 15px;
-}
-
-h6{
-    margin: 2rem;
-    font-size: 14px;
-    color: rgb(31,80,14);
-}
-
-p{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-align: justify;
-}
-
-.listado{
-    margin: 5rem;
-}
-
-footer{
-    margin-bottom: 0;
-    margin-top: auto;
-    background-color: rgb(126,0,1);
-    padding-bottom: 25px;
-}
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.textoPiePagina{
-    font-size: 14px;
-    color: white;
-    margin: 2rem;
-}
-
-.tituloPiePagina{
-    font-size: 16px;
-    color: white;
-    margin: 1rem;
-}
-
-.iconosFooter{
-    width: 15px;
-}
-
-.formulario{
-    margin: 3rem;
-    width: 30rem;
-    border-radius: 15px;
-    background-color: #f5f0f0;
-    padding: 15px;
-}
-
-.mainFormulario{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.ayudaFormulario{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.ayudaTexto{
-    width: 40%;
-    text-align: justify;
-}
-
-.padre-galeria img{
-    width: 300px;
-}
-
-/*GRIDS*/
-
-/*
-
-.grid-nav{
-    grid-area: nav;
-}
-
-.principal{
-    grid-area: header;
-}
-
-.grid-contenido{
-    grid-area: contenido;
-}
-
-.grid-galeria{
-    grid-area: galeria;
-    align-items: center;
-}
-
-main{
-    padding-bottom: 20px;
-}
-
-.footer{
-    grid-area:footer,
-}
-
-.iconosFooter:hover{
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
-
-.wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "contenido"
-    "galeria"
-    "footer"
-    ;
-}
-
-.padre-galeria {
-    display: grid; 
-    grid-auto-flow: row dense; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    gap: 10px 10px; 
-    align-content: space-around; 
-    justify-items: stretch; 
-    align-items: stretch;
-    width: 100%; 
-    height: 50%; 
-    padding-top: 20px;
-    padding-left: 10px;
-}
-
-.imagen-galeria{
-    border-radius: 25px;
-}
-
-.imagen-galeria:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-
-.imagen-sumate-militar{
-    border-radius: 35px;
-}
-
-
-
-@media only screen and (max-width: 900px) {
-    .padre-galeria{
-        grid-template-columns: 1fr 1fr;
-    }
-    .padre-galeria img{
-        padding-left: 35px;
-    }
-    .nav-tablet{
-        display: grid;
-    }
-    .grid-nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: screen;
-    }
-    .navBar{
-        display: flex;
-        justify-content: center;
-    }
-    #logoParadxs{
-        position: relative;
-    }
-    .mainFormulario{
-        flex-direction: column-reverse;
-    }
-    h1{
-        text-align: center;
-    }
-    #encabezado-principal{
-        text-align: left;
-    }
-    .ayudaTexto{
-        width: 80%;
-        padding-top: 10px;
-    }
-    .ayudaFormulario{
-        flex-direction: column;
-    }
-    }
-    
-        */
-
-
-
-#logoParadxs{
-    width: 7.5rem;
-    margin-left: 10px;
-    }
-
-#shadow-divider{
-    bottom:1px;
-    z-index:-1;
-    box-shadow: 0px 0px 1px 1px #e9e9e9;   
-    margin-top: 10px;
-    }
-
-.iconosFooter{
-    width: 20px;
-    padding-bottom: 13px;
-}
-
-.textoFooter{
-    padding-left: 15px;
-}
-
-.footer{
-    background-color: rgb(126,0,1);
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-top: 3rem;
-    bottom: 0;
-}
-
-.textoInicio{
-    padding-left: 20px;
-}
-
-.formulario{
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: rgb(240, 239, 239);
-    margin: 2rem;
-}
-
-.imagen-sumate-militar{
-    border-radius: 5px;
-    margin: 1rem;
-}
-
-.encabezadoH1{
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.imagenFormulario{
-    display: flex;
-    align-items: center;
-}
-
-.nav-link:hover{
-    transform: scale(1.1);
-    transition: all 0.7s;
-}
-
-.iconosFooter:hover{
-    transform: scale(1.1);
-    transition: all 0.7s;
-}
+/*# sourceMappingURL=style.css.map */

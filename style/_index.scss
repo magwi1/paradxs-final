@@ -1,0 +1,20 @@
+#logoParadxs{
+    width: 7.5rem;
+    margin-left: 10px;
+    }
+
+#shadow-divider{
+    bottom:1px;
+    z-index:-1;
+    box-shadow: 0px 0px 1px 1px #e9e9e9;   
+    margin-top: 10px;
+    }
+
+.nav-link:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.textoInicio{
+    padding-left: 20px;
+}
